@@ -1,0 +1,675 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgfade: #262626;
+    --bgDark: #212120;
+    --txtColor1: #D65345;
+    --textColor2: #F1862C;
+    --boxShadow: .1rem .1rem .1rem black;
+
+}
+
+body {
+    background-color: var(--bgDark);
+    position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--bgfade) !important;
+    box-shadow: var(--boxShadow);
+}
+
+.navbar-nav {
+    padding-left: 57px;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--textColor2) !important;
+}
+
+.nav-link {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: white !important;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+}
+
+.nav-link:hover {
+    color: var(--textColor2) !important;
+}
+
+.d-flex .btn {
+    border: .1rem solid var(--textColor2);
+    color: var(--textColor2);
+}
+
+.d-flex .btn:hover {
+    border: .1rem solid var(--txtColor1);
+    color: white;
+    background-color: var(--textColor2);
+}
+
+.navbar-toggler .fa-bars {
+    color: var(--textColor2);
+    font-size: 2rem;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #0000;
+    border: 0px !important;
+    color: #f1862c !important;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef00 #e9ecef00 #dee2e600;
+}
+
+/* Header div */
+.header {
+    width: 100%;
+    background-color: var(--bgfade);
+    box-shadow: var(--boxShadow);
+    color: white;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    padding: 1rem 0;
+    height: 84vh;
+    position: relative;
+    top: 5rem;
+}
+
+.header h1 {
+    color: var(--textColor2);
+    text-transform: capitalize;
+    background-image: linear-gradient(#D65345, #F1862C);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.header img {
+    height: 3rem;
+    margin: .1rem;
+    margin-top: 3rem;
+}
+
+.header p {
+    width: 60vw;
+    margin: auto;
+}
+
+.header a {
+    color: var(--textColor2);
+}
+
+/* About me */
+.about {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--bgfade);
+    box-shadow: var(--boxShadow);
+    margin-top: 6rem;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* .about h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--textColor2);
+} */
+.about .container .row .col h3 {
+    margin-top: 3rem;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.about .container img {
+    width: 100%;
+}
+
+/* skills Section */
+.skills {
+    width: 100%;
+    background-color: var(--bgfade);
+    box-shadow: var(--boxShadow);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.skills .skill-wrapper {
+    margin-top: 2rem;
+}
+
+.skills img {
+    height: 6rem;
+}
+
+/* services section */
+.services {
+    width: 100%;
+    background-image: url(media/servicesbg1-01.png);
+    background-color: #F1862C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 1rem;
+}
+
+.services h1 {
+    font-weight: bolder;
+    color: white;
+    text-shadow: var(--boxShadow);
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.services .container .row .col .card {
+    background-color: var(--bgDark);
+    color: white;
+}
+
+.services .container .row .card {
+    margin: auto;
+}
+
+.services .container .row .card img {
+
+    width: 5rem;
+    margin: auto;
+}
+
+/* pricing section */
+.pricing {
+    width: 100%;
+    background-color: var(--bgfade);
+    box-shadow: var(--boxShadow);
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pricing h1 {
+    color: var(--textColor2);
+}
+
+.pricing p {
+    width: 80vw;
+    margin: auto;
+}
+
+.pricing .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.price-card {
+    background-color: var(--bgDark);
+    box-shadow: var(--boxShadow);
+    margin: 1rem;
+    padding: 1rem 1rem;
+}
+
+.price-card2 {
+    background-color: var(--bgDark);
+    box-shadow: var(--boxShadow);
+    margin: 1rem;
+    padding: 1rem 1rem;
+}
+
+.pricing .container .row .col h6 {
+    text-align: left;
+}
+
+.btnColor {
+    background-color: transparent;
+    border: .1rem solid #F1862C;
+    border-radius: .1rem;
+    padding: 1rem;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+}
+
+.btnColor:hover {
+    background-color: #F1862C;
+    border: .1rem solid white;
+    color: white;
+}
+
+.pricing .container-fluid {
+    padding: 2rem;
+}
+
+.pricing .container-fluid .row .col img {
+    width: 95%;
+}
+
+/* portfolio Section */
+.portfolio {
+    width: 100%;
+    background-color: var(--bgfade);
+    box-shadow: var(--boxShadow);
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.portfolio h1 {
+    color: var(--textColor2);
+}
+
+.portfolio .container .row .col .card {
+    background-color: var(--bgDark);
+    margin-top: 3rem;
+}
+
+#viewProject {
+    background-color: transparent;
+    color: #F1862C;
+    border: .1rem solid transparent;
+}
+
+.portfolio .container .row .col .logo-image {
+    width: 100%;
+    margin-top: 1rem;
+    border: .1rem solid #F1862C;
+}
+
+/* clients section */
+.clients {
+    width: 100%;
+    background-image: url(media/testimonial.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: #f97407;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    background-attachment: fixed;
+    padding-top: 2rem;
+}
+
+.clients .container {
+    text-align: center;
+}
+
+.client-logo {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--bgfade);
+    box-shadow: var(--boxShadow);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.client-logo .container-fluid .row .col img {
+    height: 8rem;
+}
+
+/* testimonials section */
+.testimonials {
+    width: 100%;
+    background-color: var(--bgfade);
+    color: white;
+    box-shadow: var(--boxShadow);
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.testimonials h1 {
+    color: var(--textColor2);
+    text-transform: capitalize;
+    background-image: linear-gradient(#D65345, #F1862C);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.testimonials .container .row .col img {
+    height: 30rem;
+}
+
+/* contact section */
+.contact {
+    width: 100%;
+    background-color: var(--bgfade);
+    padding: 3rem 0;
+    margin-top: 1rem;
+}
+
+.contact h3 {
+    color: var(--textColor2);
+    text-align: left;
+}
+
+.contact .container h1 {
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.contact p {
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+}
+
+.contact .btn3 {
+    background-color:
+        var(--textColor2);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact .btn3:hover {
+    background-color: white;
+    color:
+        var(--textColor2);
+    border: .2rem solid white;
+}
+
+.contact .container .row .col .q-chat {
+    border: .1rem solid white;
+    color: white;
+    padding: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.contact .container .row .col .q-chat:hover {
+    background-color: #d6534583;
+    border:
+        var(--textColor2) solid .1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.contact .container .row .col form {
+    margin-top: 1rem;
+}
+
+#social-links {
+    margin: .1rem;
+    color:
+        var(--textColor2);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .1rem;
+    border: .1rem solid var(--textColor2);
+    box-shadow: .3rem .3rem .3rem .3rem rgb(7, 7, 8);
+    border-radius: .2rem;
+}
+
+#social-links:hover {
+    background-color:
+        var(--textColor2);
+    color: white;
+    border: .1rem solid white;
+}
+
+#headerTxtCenter {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* footer section */
+.footer {
+    background-image: linear-gradient(#F1862C, #D65345);
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 1rem;
+}
+
+.footer a {
+    color: white;
+    margin: .1rem;
+}
+
+.footer a:hover {
+    color: black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about .container .col img {
+        height: 16rem;
+    }
+
+    .pricing .container-fluid .row .col img {
+        height: 15rem;
+        margin-top: 2rem;
+    }
+
+    .pricing {
+        margin-top: 0;
+    }
+
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .header p {
+        width: 100vw;
+        padding: 0 1rem;
+    }
+
+    .startupKit h2 {
+        margin-top: 1rem !important;
+    }
+
+    .header img {
+        height: 2.2rem;
+    }
+
+    .startupKit img {
+        width: 90% !important;
+        margin-left: 2rem;
+        height: auto !important;
+    }
+
+    .skills h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .btnColor {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .testimonialsWrapper h3 {
+        margin-top: -1rem !important;
+    }
+
+    .testimonials .container .row .col img {
+        height: 19rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        padding-left: 1px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .price-card,
+    .price-card2 {
+        margin: 1rem;
+        width: 70%;
+        margin: 1rem auto;
+        height: auto !important;
+    }
+
+    .startupKit img {
+        width: 70%;
+        margin-left: 3rem;
+    }
+
+    .startupKit h2 {
+        margin-top: 2rem !important;
+        font-size: 1.5rem;
+    }
+
+    .startupKit h4 {
+        font-size: 1.1rem;
+    }
+
+    .testimonialsWrapper h3 {
+        margin-top: -1rem !important;
+    }
+
+    .navbar-nav {
+        padding-left: 1px !important;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .services .container .row .col .card {
+        height: 15rem;
+    }
+
+    .price-card {
+        margin: 0rem;
+        height: 33rem;
+    }
+
+    .price-card2 {
+        margin: 0rem;
+    }
+
+    .startupKit h2 {
+        margin-top: 2rem !important;
+        font-size: 1.5rem;
+    }
+
+    .startupKit h4 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio .card {
+        height: 22rem;
+    }
+
+    .testimonialsWrapper h3 {
+        margin-top: 4rem !important;
+    }
+
+    .testimonials .container .row .col img {
+        height: 22rem;
+    }
+
+    .navbar-nav {
+        padding-left: 1px !important;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .services .container .row .col .card {
+        height: 15rem;
+    }
+
+    .price-card {
+        height: 32rem;
+    }
+
+    .price-card2 {
+        height: 26rem;
+    }
+
+    .portfolio .card {
+        height: 22rem;
+    }
+
+    .testimonialsWrapper h3 {
+        margin-top: 8rem !important;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .col-width {
+        width: 11.667%;
+        margin-left: .6rem;
+    }
+
+    .services .container .row .col .card {
+        height: 14rem;
+    }
+
+    .price-card {
+        height: 28rem;
+    }
+
+    .price-card2 {
+        height: 22rem;
+    }
+
+    .startupKit h4 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio .card {
+
+        height: 21rem;
+    }
+
+    .testimonialsWrapper h3 {
+        margin-top: 8rem !important;
+    }
+}
