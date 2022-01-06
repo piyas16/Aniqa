@@ -61,7 +61,7 @@ body {
 }
 
 .navbar-toggler .fa-bars {
-    color: var(--textColor2);
+    color: #f1862c;
     font-size: 2rem;
 }
 
